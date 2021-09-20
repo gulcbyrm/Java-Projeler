@@ -1,0 +1,78 @@
+
+*{
+    base0: #627898;
+    base3: #13223a;
+    base4: #0f1d32;
+    base5: #14243C;
+    renk-border:#039ED3;
+    renk-eda: rgb(237, 166, 120);
+    renk-mor:#b467bc;
+
+    /* Default font ayarları */
+    -fx-font-family: "Trebuchet MS";
+    -fx-font-size:1.3em;
+   /* -fx-text-fill: white;
+    /*Base renk belirleme*/
+    -fx-base: base3;
+}
+
+.beyaz-yazi{
+    -fx-fill: white;
+}
+
+.text-field-siyah{
+    -fx-text-fill: black;
+}
+
+
+.box-border{
+    -fx-border-width: 0.1em;
+    -fx-border-color: white;
+}
+
+.side-bar-hbox {
+    -fx-background-insets:0;
+    -fx-background-color:transparent; 
+}
+
+.side-bar-hbox:hover {
+    -fx-background-color:base4; 
+}
+.side-bar-hbox:visited {
+    -fx-background-color:red; 
+}
+.baslik1 {
+    -fx-effect: dropshadow(three-pass-box, black, 3, 0.0, 0, 1);
+    -fx-text-alignment: center;
+    -fx-font-size: 235%;
+    -fx-fill: renk-eda;
+}
+
+.baslik1Giris {
+    -fx-effect: dropshadow(three-pass-box, black, 3, 0.0, 0, 1);
+    -fx-text-alignment: center;
+    -fx-font-size: 235%;
+    -fx-fill: renk-mor;
+}
+
+.giris-pane{
+    -fx-background-color: base0;
+    -fx-border-width: 0.1em;
+    -fx-border-color: renk-border;
+}
+.giris-pane-header{
+    -fx-background-color: base5;
+    -fx-border-width: 0.05em;
+    -fx-border-color: black;
+}
+.renksol{
+        -fx-background-color: #c2c2be;
+ 
+}
+.renksag{
+        -fx-background-color: #dededb;
+    
+}
+
+
+

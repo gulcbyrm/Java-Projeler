@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="787.0" prefWidth="1046.0" stylesheets="@../../resources/first.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eczaneotomasyon.controller.StartController">
+   <children>
+      <BorderPane VBox.vgrow="ALWAYS">
+         <left>
+            <AnchorPane prefHeight="777.0" prefWidth="254.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="777.0" prefWidth="295.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="134.0" prefWidth="293.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <ImageView fitHeight="145.0" fitWidth="213.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                                 <image>
+                                    <Image url="@../../resources/images/satis.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="18.0" prefWidth="293.0" />
+                        <HBox alignment="CENTER_LEFT" onMouseClicked="#showStok" prefHeight="63.0" prefWidth="295.0" styleClass="side-bar-hbox" VBox.vgrow="ALWAYS">
+                           <children>
+                              <ImageView fitHeight="42.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                                 <image>
+                                    <Image url="@../../resources/images/ilacres.jpg" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label text=" Stok" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets left="15.0" right="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="26.0" layoutY="126.0" onMouseClicked="#showSatis" prefHeight="25.0" prefWidth="293.0" styleClass="side-bar-hbox" VBox.vgrow="ALWAYS">
+                           <children>
+                              <ImageView fitHeight="51.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                                 <image>
+                                    <Image url="@../../resources/images/satis.jpg" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label prefHeight="24.0" prefWidth="105.0" text=" Satış" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets left="15.0" right="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="21.0" layoutY="207.0" onMouseClicked="#showMusteri" styleClass="side-bar-hbox" VBox.vgrow="ALWAYS">
+                           <children>
+                              <ImageView fitHeight="42.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                                 <image>
+                                    <Image url="@../../resources/images/musteri.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label prefHeight="24.0" prefWidth="102.0" text="   Müşteri" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="21.0" layoutY="283.0" onMouseClicked="#showIlac" styleClass="side-bar-hbox" VBox.vgrow="ALWAYS">
+                           <children>
+                              <ImageView fitHeight="40.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                                 <image>
+                                    <Image url="@../../resources/images/ilac.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label prefHeight="24.0" prefWidth="104.0" text="   Ilaç" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets left="15.0" right="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" onMouseClicked="#showEczane" prefHeight="77.0" prefWidth="293.0" styleClass="side-bar-hbox">
+                           <children>
+                              <ImageView fitHeight="38.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                                 <image>
+                                    <Image url="@../../resources/images/personEcz.jpg" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label text="  Eczane" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets left="15.0" right="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="21.0" layoutY="349.0" onMouseClicked="#showKimlik" styleClass="side-bar-hbox" VBox.vgrow="ALWAYS">
+                           <children>
+                              <ImageView fitHeight="43.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                                 <image>
+                                    <Image url="@../../resources/images/Person%20Male-32.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label prefHeight="24.0" prefWidth="81.0" text="  Kimlik" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets left="15.0" right="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="531.0" onMouseClicked="#exit" prefHeight="66.0" prefWidth="293.0" styleClass="side-bar-hbox" VBox.vgrow="ALWAYS">
+                           <children>
+                              <ImageView fitHeight="40.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                                 <image>
+                                    <Image url="@../../resources/images/Sign-Error-icon.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label text="  Exit" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets left="15.0" right="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="5.0" left="7.0" right="7.0" top="5.0" />
+               </BorderPane.margin>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="787.0" prefWidth="811.0" styleClass="giris-pane" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" layoutX="5.5" layoutY="5.5" prefHeight="53.0" prefWidth="593.0" styleClass="giris-pane-header" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="4.0">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="About" />
+                     </children>
+                  </HBox>
+                  <ImageView fitHeight="123.0" fitWidth="466.0" layoutX="152.5" layoutY="164.5" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="151.0" AnchorPane.rightAnchor="175.0" AnchorPane.topAnchor="163.0">
+                     <image>
+                        <Image url="@../../resources/images/covid.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="268.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="beyaz-yazi" text="Yıldız" />
+                  <Text layoutX="268.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="beyaz-yazi" text="****" />
+                  <Text layoutX="223.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="baslik1" text="YILDIZ ECZANESİ" wrappingWidth="274.450927734375" />
+                  <Text layoutX="83.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="beyaz-yazi" text="Student Name   :" />
+                  <Text layoutX="83.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="beyaz-yazi" text="Student Number:" />
+                  <Text layoutX="83.0" layoutY="525.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="beyaz-yazi" text="Course Name     :" />
+                  <Text layoutX="268.0" layoutY="524.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="beyaz-yazi" text="****" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</VBox>

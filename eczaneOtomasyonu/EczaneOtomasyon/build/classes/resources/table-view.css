@@ -1,0 +1,78 @@
+
+/*Table view header yazı rengi*/
+*{
+    cok-cok-acik:#0096C9;
+    base0: #627898;
+    base01: #5a6d8b;   
+    base1: #254981;
+}
+
+.table-view .cell{
+  /*-fx-cell-size: 35;*/
+  -fx-border-color: transparent;
+  -fx-text-fill: black;
+  -fx-font-size:1em;
+}
+
+
+
+.table-view .cell:selected {
+    -fx-background-color: cok-cok-acik;
+    -fx-text-fill: whitesmoke;
+    -fx-text-background-color: red;
+}
+
+.table-row-cell{-fx-border-width:0 0 0 10; }
+
+
+.table-row-cell:odd{
+    -fx-background-color: base0;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.table-view .column-header, .table-view .column-header .filler, 
+.table-view .column-header-background .filler 
+{ 
+    -fx-size: 2.6em; 
+   /* -fx-background-color: linear-gradient(to bottom, #1dbbdd44, #93f9b944);*/
+}
+
+
+.table-row-cell:even{
+    -fx-background-color: base01;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+
+/* scroll bar starts here */
+
+
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color:derive( #1a2d78,90%);
+    -fx-background-insets: 3, 0, 0;
+    -fx-background-radius: 2.5em;
+}
+
+
+
+/* The increment and decrement button CSS class of scrollbar 
+.table-view .increment-button ,.table-view .decrement-button {
+    -fx-background-color:transparent;
+	-fx-background-radius: 33em;
+
+}*/
+
+/*Bu da çalışıyor texti renklendirmek için
+.table-row-cell .text {
+       -fx-fill: red ;
+}*/
+
+/*.table-view .cell:hover {
+    -fx-background-color: cok-cok-acik;
+    -fx-text-background-color: red;
+}*/

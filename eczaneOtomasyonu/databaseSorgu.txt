@@ -1,0 +1,58 @@
+
+create database eczaneOtomasyon;
+
+
+CREATE TABLE Eczane(
+	id integer NOT NULL GENERATED ALWAYS AS IDENTITY PRIMARY KEY ,
+	EAdi varchar(100) NOT null,
+	kurulusTarihi varchar ,
+	kiminAdinaKayitli varchar(40) 
+	);
+
+	CREATE TABLE Ilac(
+	id integer NOT NULL GENERATED ALWAYS AS IDENTITY PRIMARY KEY ,
+	IAdi varchar(100) NOT NULL,
+	tipi varchar(30) , 
+	tanimi varchar (300) ,
+	fiyat int ,
+	doz float ,
+	uygulamaSekli varchar(200) 
+	);
+
+	CREATE TABLE Kimlik(
+	id integer NOT NULL GENERATED ALWAYS AS IDENTITY PRIMARY KEY ,
+	KAdi varchar(30) NOT NULL,
+	KSoyadi varchar(30)  ,
+	KimlikTC varchar(11)  ,
+	dogumTarihi varchar(11)  ,
+	dogumYeri varchar(100)  
+	);
+
+
+	CREATE TABLE Musteri(
+	id integer NOT NULL GENERATED ALWAYS AS IDENTITY PRIMARY KEY ,
+	satinAlinanTarih varchar  ,
+	hastalikAdi varchar(200)  ,
+	sigortaNo int  ,
+	saglikGuvenceTuru varchar(100)  ,
+	durum varchar(100)  ,
+	kimlikID int references Kimlik(ID) 
+	);
+
+	CREATE TABLE Satis(
+	id integer NOT NULL GENERATED ALWAYS AS IDENTITY PRIMARY KEY ,
+	satisTarihi varchar  ,
+	musteriID int NOT NULL references Musteri(ID),
+	ilacID int NOT NULL references Ilac(ID)
+	);
+
+
+	
+CREATE TABLE Stok(
+	id integer NOT NULL GENERATED ALWAYS AS IDENTITY PRIMARY KEY ,
+	satinAlindigiFirma varchar(100) ,
+	miktari int  ,
+	sonKullanmaTarihi varchar  ,
+	ilacID int references Ilac(ID),
+	eczaneID int references Eczane(ID)
+	);
